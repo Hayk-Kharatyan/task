@@ -9,7 +9,6 @@ function Product({ data }) {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [searchText, setSearchText] = useState("");
 
-    // Unique products logic
     const uniqueProducts = {};
     if (Array.isArray(data.result)) {
         data.result.forEach(item => {
